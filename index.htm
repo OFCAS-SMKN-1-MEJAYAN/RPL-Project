@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+    <link rel="stylesheet" href="CSS/library.css">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script src="JS/bootstrap.js"></script>
+</head>
+
+<body class="reset">
+    <!-- awal header -->
+    <header>
+        <!-- awal nav -->
+        <nav id="navbar-example2" class="navbar navbar-expand-lg border-bottom border-success pb-1">
+            <div class="container-fluid">
+                <a class="fs-2 t-hover-none text-decoration-none t-bold c-light-green" href="#"><img src="assets/nav/logoRPL.png" class="wh-40px" alt="" srcset=""> RPL</a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <div class="menu-toggle">
+                <span id="one"></span>
+                <span id="two"></span>
+                <span id="three"></span>
+            </div>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Dropdown
+                </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- akhir nav -->
+        <!-- awal carousel -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div id="carousel-caption-one" class="carousel-item active" data-bs-interval="10000">
+                    <div class="carousel-caption ">
+                        <img src="assets/nav/logoRPL.png" alt="" class="carousel-caption-img">
+                        <caption></caption>
+                        <h1>Selamat datang di RPL</h1>
+                        <p class="h-2 fw-light fs-4">
+                            This is a lead paragraph. It stands out from regular paragraphs.
+                        </p>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2" class="cta">
+                            <span class="hover-underline-animation"> Kenalan dulu yuk! </span>
+                            <svg class="cta-svg" viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                                <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10" id="Path_10"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="carousel-caption-two" class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-caption d-md-block">
+                        <div class="row h-100vh d-flex justify-content-center align-items-center">
+                            <div class="col-sm-4 ofcas-logo d-flex flex-column align-items-center justify-content-center">
+                                <!-- logo OFCAS -->
+                                <div class="ellipse"></div>
+                                <h1 class="text-center fw-bold fs-1">OFCAS</h1>
+                            </div>
+                            <div class="col-sm-8 text-start">
+                                <p class="h-2 fw-bold fs-4">(Organization oF Computer Addicted Students) <br> organisai siswa kecanduan komputer</p>
+                                <p class="h2 lead fw-normal">Adalah nama organisasi pertama kali yang buat oleh angkatan 10 RPL dengan tujuan untuk mengumpulkan siswa atau siswi dan mengembangkan skills di bidang komputer maupun yang berbau teknologi,agar menyadarkan bahwa pentingnya
+                                    teknologi untuk dimasa depan agar tidak ketinggalan zaman. Disinilah tempat dimana pembelajaran dengan keseruan akan dimulai!</p>
+                                <button class="learn-more">
+                                        <span class="circle" aria-hidden="true">
+                                        <span class="icon arrow"></span>
+                                        </span>
+                                        <span class="button-text"><a href="" class="text-decoration-none">Learn More</a></span>
+                                        <!-- ke halaman OFCAS -->
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="carousel-caption-three" class="carousel-item" data-bs-interval="10000">
+                    <div class="carousel-caption position-inherit h-100vh w-80vw container d-flex flex-column justify-content-center align-items-center">
+                        <div class=" row">
+                            <p class="h-2 fw-bold fs-4">Website yang di buat oleh jurusan RPL angkatan 10 ini tidak hanya sebuah mockup atau perkenalan saja tapi memberikan layanan pengetahuan pada halaman <a href="">OFCAS</a> dan sekaligus mengenalkan project-project yang kami
+                                buat dan sekaligus membantu adik kelas kami atau orang yang awam mengenal RPL untuk membantu mengenalnya lebih dalam dan sekaligus memberi ilmu yang bermanfaat di bidang komputer</p>
+                        </div>
+                        <div class="angle_down translate-bottom-Y row">
+                            <p class="h-2 fw-light fs-4 m-0 p-0">Untuk lebih lanjut ayok mengenal lebih dalam!</p>
+                            <a href="#main" class="w-min-content m-auto">
+                                <svg class="arrowdown" viewBox="0 0 24 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="iconmonstr-angel-down-thin 1">
+                                      <path class="vector vector5" d="M23.245 12L12 26.374L0.781 12L0 12.619L12 28L24 12.609L23.245 12Z"/>
+                                      <path class="vector vector4" d="M23.245 12L12 26.374L0.781 12L0 12.619L12 28L24 12.609L23.245 12Z"/>
+                                      <path class="vector vector3" d="M23.245 12L12 26.374L0.781 12L0 12.619L12 28L24 12.609L23.245 12Z"/>
+                                      <path class="vector vector2" d="M23.245 12L12 26.374L0.781 12L0 12.619L12 28L24 12.609L23.245 12Z"/>
+                                      <path class="vector vector1" d="M23.245 12L12 26.374L0.781 12L0 12.619L12 28L24 12.609L23.245 12Z"/>
+                                    </g>
+                                  </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </header>
+    <!-- akhir carousel -->
+    <!-- akhir header -->
+
+    <!-- awal main -->
+    <main id="main" class="pt-52-px" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+        <div id="about d-grid wh-100vh">
+            <div class="row w-100vw flex-column p-sm-2 p-lg-5 pb-lg-0">
+                <h1 class="text-center">Rekayasa Perangkat Lunak <span class=" display-6">(RPL)</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam quam unde eum repudiandae assumenda sunt labore, amet iste reiciendis. Sint, sequi? Quos officia dolor nemo quaerat provident, veritatis quam laborum, facilis incidunt
+                    illum consequatur delectus quibusdam doloribus consequuntur optio nihil, voluptatibus cumque id omnis! Assumenda illum voluptatem vero reprehenderit.</p>
+            </div>
+            <div class=" row w-100vw p-sm-2 flex-column flex-sm-row p-lg-5 pt-lg-1">
+                <div class="col d-flex flex-column align-items-md-center justify-content-sm-center">
+                    <h1 class=" align-self-md-start">Di RPL belajar apa aja?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam quam unde eum repudiandae assumenda sunt labore, amet iste reiciendis. Sint, sequi? Quos officia dolor nemo quaerat provident, veritatis quam laborum, facilis incidunt
+                        illum consequatur delectus quibusdam doloribus consequuntur optio nihil, voluptatibus cumque id omnis! Assumenda illum voluptatem vero reprehenderit.</p>
+                </div>
+                <div class="col R-image-wh d-flex align-items-md-center justify-content-sm-center">
+                    <img src="assets/content/Programming-amico (2).webp" alt="" srcset="">
+                </div>
+            </div>
+            <div class="content-cards d-flex flex-wrap justify-content-center">
+                <div class="card m-sm-5" style="width: 22rem;">
+                    <div class="card-img-top"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam ex debitis beatae qui nihil, aperiam dolor commodi maiores tenetur, iure, quod dolores quos natus eum unde sapiente cumque molestiae?</p>
+                        <a href="">
+                            <button id="btn-in-card">
+                                <span>Hover me</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                             </svg>
+                                </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card m-sm-5" style="width: 22rem;">
+                    <div class="card-img-top"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam ex debitis beatae qui nihil, aperiam dolor commodi maiores tenetur, iure, quod dolores quos natus eum unde sapiente cumque molestiae?</p>
+                        <a href="">
+                            <button id="btn-in-card">
+                                <span>Hover me</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                             </svg>
+                                </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card m-sm-5" style="width: 22rem;">
+                    <div class="card-img-top"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam ex debitis beatae qui nihil, aperiam dolor commodi maiores tenetur, iure, quod dolores quos natus eum unde sapiente cumque molestiae?</p>
+                        <a href="">
+                            <button id="btn-in-card">
+                                <span>Hover me</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                             </svg>
+                                </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card m-sm-5" style="width: 22rem;">
+                    <div class="card-img-top"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam ex debitis beatae qui nihil, aperiam dolor commodi maiores tenetur, iure, quod dolores quos natus eum unde sapiente cumque molestiae?</p>
+                        <a href="">
+                            <button id="btn-in-card">
+                                <span>Hover me</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                             </svg>
+                                </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card m-sm-5" style="width: 22rem;">
+                    <div class="card-img-top"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsam ex debitis beatae qui nihil, aperiam dolor commodi maiores tenetur, iure, quod dolores quos natus eum unde sapiente cumque molestiae?</p>
+                        <a href="">
+                            <button id="btn-in-card">
+                                <span>Hover me</span>
+                                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                <path d="M1,5 L11,5"></path>
+                                <polyline points="8 1 12 5 8 9"></polyline>
+                             </svg>
+                                </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="not-only-that">
+                <p class=" text-sm-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit ullam sit sequi veritatis. Error.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="JS/script.js"></script>
+<script src="JS/jquery-3.6.0.min.js"></script>
+
+</html>

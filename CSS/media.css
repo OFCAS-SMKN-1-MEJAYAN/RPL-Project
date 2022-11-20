@@ -1,0 +1,25 @@
+@media screen and (max-width:767px) {
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        margin: auto;
+        text-align: center;
+    }
+    #carousel-caption-one,
+    #carousel-caption-two,
+    #carousel-caption-three {
+        background-position: 50% 50%;
+    }
+    .R-image-wh img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    ul.navbar-nav {
+        margin-bottom: 0 !important;
+    }
+}

@@ -1,0 +1,326 @@
+.reset {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* tinggi dan lebar */
+
+.wh-40px {
+    width: 40px;
+    height: 40px;
+}
+
+.wh-100vh {
+    width: 100vw;
+    height: 100vh;
+}
+
+.w-100vw {
+    width: 100vw;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.w-80vw {
+    width: 80vw;
+}
+
+.w-max-content {
+    width: max-content;
+}
+
+.w-min-content {
+    width: min-content !important;
+}
+
+
+/* padding dan margin */
+
+.pt-52-px {
+    padding-top: 52px;
+}
+
+
+/* image */
+
+.normal-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.R-image-wh img {
+    width: 65%;
+    height: 65%;
+    background-size: cover;
+}
+
+
+/* bagian text and font */
+
+
+/* .sub-h2{
+    font-size: x-large;
+    font-family: ;
+} */
+
+.t-decoration-none {
+    text-decoration: none;
+}
+
+.t-bold {
+    font-weight: bold;
+}
+
+.t-hover-none:hover {
+    color: var(--light-green);
+}
+
+
+/* akhir bagian text and font */
+
+
+/* awal coloring */
+
+.c-light-green {
+    color: var(--light-green);
+}
+
+
+/* akhir coloring */
+
+
+/* another */
+
+.ellipse {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.translate-bottom-Y {
+    transform: translateY(20%);
+}
+
+.position-inherit {
+    position: inherit !important;
+    left: inherit !important;
+    right: inherit !important;
+    bottom: inherit !important;
+    top: inherit !important;
+}
+
+
+/* template */
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text a {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+    box-shadow: 2px 3px 5px 0px rgba(4, 120, 31, 0.52);
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(4, 120, 31, 0.52);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(4, 120, 31, 0.52);
+    ;
+}
+
+button:active .circle {
+    box-shadow: none;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+    text-shadow: 1px 0 2px rgba(4, 120, 31, 0.52);
+}
+
+.cta {
+    border: none;
+    background: none;
+    color: #fff;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+#Path_10 {
+    color: #fff;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#btn-in-card {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+#btn-in-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+#btn-in-card span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+#btn-in-card svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+#btn-in-card:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+#btn-in-card:hover svg {
+    transform: translateX(0);
+}
+
+#btn-in-card:active {
+    transform: scale(0.95);
+}

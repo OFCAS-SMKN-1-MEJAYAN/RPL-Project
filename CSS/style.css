@@ -1,0 +1,311 @@
+/* Always root:v */
+
+:root {
+    --light-green: rgb(0, 255, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+/* navbar */
+
+nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: aqua;
+}
+
+.container-fluid {
+    padding: 0 8px !important;
+}
+
+.navbar-expand-lg {
+    padding: 0 !important;
+}
+
+.navbar-toggler {
+    padding: 3px 5px !important;
+    border: none !important;
+}
+
+.form-control {
+    width: 70% !important;
+}
+
+.navbar-toggler {
+    padding: 0 !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+
+/* Let's go styling */
+
+
+/* menu toggle */
+
+.menu-toggle :first-child {
+    transform-origin: 0 0;
+}
+
+.menu-toggle :last-child {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 33px;
+    height: 3px;
+    background-color: rgb(82, 82, 82);
+    border-radius: 3px;
+    transition: all 0.6s;
+    margin: 15% 0;
+}
+
+.menu-toggle span.show-one {
+    transform: rotate(45deg) translate(-3px, -2px);
+}
+
+.menu-toggle span.show-two {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.menu-toggle span.show-three {
+    transform: rotate(-45deg) translate(-2px, 1px);
+}
+
+
+/* the body */
+
+
+/* carousel */
+
+.carousel {
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel-caption {
+    color: white !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    /* transform: translateY(10%); */
+}
+
+#carousel-caption-one {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /*url(../assets/carousel/pexels-antoni-shkraba-4348401.jpg)*/
+    ;
+}
+
+#carousel-caption-two {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /*url(../assets/carousel/pexels-antoni-shkraba-4348401.jpg)*/
+    ;
+}
+
+#carousel-caption-three {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /*url(../assets/carousel/pexels-antoni-shkraba-4348401.jpg)*/
+    ;
+}
+
+#carousel-caption-one,
+#carousel-caption-two,
+#carousel-caption-three {
+    height: 100vh;
+    background-size: cover;
+}
+
+button.learn-more .button-text a:hover {
+    color: grey;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: var(--light-green) !important;
+}
+
+.carousel-img {
+    /*divnya*/
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-caption-img {
+    /*imgnya*/
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+    /* text */
+    text-shadow: 2px 2px 10px black;
+}
+
+@keyframes mymove1 {
+    0% {
+        opacity: 0%;
+    }
+    5% {
+        opacity: 100%;
+    }
+    10% {
+        opacity: 100%;
+    }
+    40% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes mymove2 {
+    0% {
+        opacity: 0%;
+    }
+    15% {
+        opacity: 0%;
+    }
+    20% {
+        opacity: 100%;
+    }
+    25% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes mymove3 {
+    0% {
+        opacity: 0%;
+    }
+    25% {
+        opacity: 0%;
+    }
+    30% {
+        opacity: 100%;
+    }
+    35% {
+        opacity: 100%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes mymove4 {
+    0% {
+        opacity: 0%;
+    }
+    35% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 100%;
+    }
+    45% {
+        opacity: 100%;
+    }
+    70% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes mymove5 {
+    0% {
+        opacity: 0%;
+    }
+    45% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    55% {
+        opacity: 100%;
+    }
+    75% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+
+.arrowdown {
+    width: calc(12px * 3);
+    transform: translate(0%, -21.875%);
+    transform: translateY(15%);
+}
+
+.vector {
+    fill: var(--light-green);
+}
+
+.vector1 {
+    transform: translateY(1px);
+    animation: mymove1 3s infinite;
+}
+
+.vector2 {
+    transform: translateY(7px);
+    animation: mymove2 3s infinite;
+}
+
+.vector3 {
+    transform: translateY(13px);
+    animation: mymove3 3s infinite;
+}
+
+.vector4 {
+    transform: translateY(19px);
+    animation: mymove4 3s infinite;
+}
+
+.vector5 {
+    transform: translateY(25px);
+    animation: mymove5 3s infinite;
+}
+
+.ofcas-logo img {
+    width: 80%;
+}
+
+
+/* main */
+
+main {
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+}
+
+.card-img-top {
+    /* background-image: url(../assets/content/pexels-thisisengineering-3861969.jpg); */
+    background-color: aliceblue;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+}
