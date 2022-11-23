@@ -1,9 +1,3 @@
-/* Always root:v */
-
-:root {
-    --light-green: rgb(0, 255, 0);
-}
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -17,7 +11,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    background-color: aqua;
+    background-color: var(--medium-green);
 }
 
 .container-fluid {
@@ -130,7 +124,7 @@ button.learn-more .button-text a:hover {
 }
 
 .carousel-dark .carousel-indicators [data-bs-target] {
-    background-color: var(--light-green) !important;
+    background-color: var(--medium-green) !important;
 }
 
 .carousel-img {
@@ -261,7 +255,7 @@ button.learn-more .button-text a:hover {
 }
 
 .vector {
-    fill: var(--light-green);
+    fill: var(--medium-green);
 }
 
 .vector1 {
